@@ -1,0 +1,36 @@
+{
+  "emmet.preferences": {
+    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
+  },
+  "workbench.panel.defaultLocation": "right",
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/tmp": true,
+    "**/styles": true,
+  },
+  "html.format.indentInnerHtml": false,
+  "html.format.wrapAttributes": "preserve",
+  "php.suggest.basic": false,
+  "editor.quickSuggestions": {
+    "comments": true
+  },
+  "editor.fontLigatures": "'ss01'",
+  "javascript.format": {
+    "semicolons": "insert",
+    "insertSpaceBeforeFunctionParenthesis": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "html.format.extraLiners": "",
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize"
+}

@@ -1,0 +1,18 @@
+<!-- Nav Tabs -->
+<div class="mt-4 mb-4">
+  <ul class="nav nav-tabs">
+    <%
+    let active = '';
+    links.forEach(item => {
+      if ( item.url === url ) {
+        active = true 
+      }
+    %>
+    <li class="nav-item">
+      <a class="nav-link<%= active %>" aria-current="page" href="<%= item.url %>"><%= item.title %></a>
+    </li>
+    <%
+    });
+    %>
+  </ul>
+</div>

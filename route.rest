@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/
+
+###
+
+GET http://localhost:3000/api/63e001dabd5e3e8eeb09e42b
+
+
+###
+
+POST http://localhost:3000/api/
+Content-Type: application/json
+
+{
+    "text": "remove me"
+}
+
+###
+
+PUT http://localhost:3000/api/63e00fb1700ecfe5cab7f2ef
+Content-Type: application/json
+
+{
+    "text": "update me"
+}
+
+###
+
+DELETE http://localhost:3000/api/63e00771c1bc4757d9927f25
+Content-Type: application/json

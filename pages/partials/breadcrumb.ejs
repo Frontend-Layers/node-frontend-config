@@ -1,0 +1,14 @@
+<!-- Breadcrumbs -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <%
+    links.forEach(item => {
+    %>
+    <li class="breadcrumb-item"><a href="<%= item.url %>"><%= item.title %></a></li>
+    <%
+    });
+    %>
+
+    <li class="breadcrumb-item active" aria-current="page"><%= pageTitle %></li>
+  </ol>
+</nav>

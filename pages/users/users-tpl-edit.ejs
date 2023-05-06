@@ -1,0 +1,48 @@
+<%- include('../partials/head.ejs', {title: 'Add User' }); %>
+
+<div class="container">
+  <h1>Edit User - <%= userId %></h1>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Index</a></li>
+      <li class="breadcrumb-item"><a href="/users">Users</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><%= userId %></li>
+    </ol>
+  </nav>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/users">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/add">Add</a>
+    </li>
+  </ul>
+
+
+  <h3>Change Email</h3>
+  <form class="row g-3" action="/users/edit/<%= userId %>" method="post">
+    <div class="col-12">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= userText %>">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+  <h3>Change Password</h3>
+  <form class="row g-3" action="/users/edit/<%= userId %>" method="post">
+    <div class="col-12">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= userText %>">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+</div>
+
+<%- include('../partials/footer.ejs'); %>

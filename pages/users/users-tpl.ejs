@@ -1,0 +1,38 @@
+<%- include('../partials/head.ejs', {title: 'Users' }); %>
+
+<div class="container">
+  <h1>Users</h1>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Index</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Users</li>
+    </ol>
+  </nav>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/users">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/add">Add</a>
+    </li>
+  </ul>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Email</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%- usersList %>
+    </tbody>
+  </table>
+</div>
+
+<%- include('../partials/footer.ejs'); %>

@@ -1,0 +1,52 @@
+<%- include('../partials/head.ejs', {title: 'Users' }); %>
+
+<div class="container">
+  <h1>User - <%= userId %></h1>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Index</a></li>
+      <li class="breadcrumb-item"><a href="/users">Users</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><%= userId %></li>
+    </ol>
+  </nav>
+
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="/users">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/users/add">Add</a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="container">
+
+
+  <div class="mt-4">
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="mb-0">Email</p>
+          </div>
+          <div class="col-sm-9">
+            <p class="text-muted mb-0"><%- userDetails %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-4">
+    <a class="btn btn-primary" href="/users/edit/<%= userId %>" role="button">Edit</a>
+    <a class="btn btn-danger" href="/users/delete/<%= userId %>" role="button">Delete</a>
+  </div>
+
+</div>
+
+<%- include('../partials/footer.ejs'); %>
